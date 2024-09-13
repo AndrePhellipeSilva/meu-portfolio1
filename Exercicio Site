@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Viajante nº8</title>
+</head>
+<body>
+    <header class="container-fluid p-2 bg-warning text-center"> 
+        <nav class="navbar navbar-expand-lg bg-warning>
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Viagem espacial</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end bg-warning" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Pacotes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Taxas</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Contato
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+            
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <h1>Um universo de possibilidades</h1>
+    </header>
+    
+    <section class="container-fluid bg-light text-center">
+        <h2>O viajante número 8</h2>
+        <p>
+            Bem-vindo à Viajante Número 8, a agência de viagens espaciais multiversais que vai levar você a lugares além da sua imaginação! Nossa equipe de especialistas em viagens interdimensionais está aqui para ajudá-lo a explorar os mais incríveis destinos do multiverso. De planetas exóticos a galáxias distantes, nossos pacotes de viagem são projetados para proporcionar experiências únicas e inesquecíveis. Seja para um passeio relaxante em uma praia de areia de estrelas em Andrômeda ou uma aventura emocionante em um planeta de gelo em uma galáxia desconhecida, nossa agência tem tudo o que você precisa para uma viagem espacial inesquecível. Além disso, nossos guias experientes e equipamentos de ponta garantem que sua viagem seja segura e confortável. Então, prepare-se para embarcar em uma jornada cósmica sem precedentes com a Viajante Número 8. Onde você gostaria de ir? O universo é o limite!
+            <hr>
+        </p>
+        
+        <div row>
+        <figure class="col text center">
+            <picture>
+                <source media="(max-width: 750px)" srcset="image/image-p.jpg" type="image/jpeg">
+                <source media="(max-width: 1050px)" srcset="image/image-m.jpg" type="image/jpeg">
+                <img src="image/image-G.jpg" alt="Um viajante Multiversal">
+            </picture>
+            <figcaption>Um viajante multiversal</figcaption>
+        </figure>
+            <img src="image/" alt="">
+         </div>
+    </section>
+    
+    <section class="container-fluid bg-warning"> <!--Formulário do cliente-->
+        <h2>Orçamento</h2>
+        <form method="get" action="">
+            
+        <fieldset>
+            <legend>Dados do viajante</legend>
+            <div class="mb-3">  
+                <label class="form-label" for="nome">
+                    Nome:
+                </label>
+                <Input type="Text" class="form-control" name="nome" id="nome">
+            </div>
+          
+            <div class="mb-3">
+            <label class="form-label" for="email">
+                E-mail:
+            </label>
+            <Input type="email" class="form-control" required name="email" id="e-mail">
+            </div>
+            
+            <div class="mb-3">
+            <label class="form-label" for="dataIda">
+                Data de ida:
+            </label>
+            <input type="date" class="form-control" name="dataIda" id="dataIda">
+            </div>
+
+            <div class="mb-3">
+            <label class="form-label" for="dataVolta">
+                Data de volta
+            </label>
+            <input type="date" class="form-control" name="dataVolta" id="dataVolta">
+            </div>
+
+            <div class="mb-3">
+            <label class="form-label" for="qtdPessoas">
+                Quantidade de Pessoas:
+            </label>
+            <input type="number" class="form-control" name="qtdPessoas" id="qtdPessoas">
+            </div>
+        </fieldset>
+    
+            <fieldset> <!--Seleção de serviços-->
+                <legend>Quais serviços deseja contratar:</legend>
+                <label>
+                    <input type="checkbox" name="passagens" value="Passagens"> Compra de passagens
+                    <input type="checkbox" name="hospedagem" value="Hospedagem"> Reserva de hospedagem
+                    <input type="checkbox" name="veiculo" value="Veiculo"> Reserva de veículos
+                </label>
+            </fieldset>
+    
+    
+            <fieldset> <!--Forma de pagamento atributo radio, o cliente só pode selecionar uma forma de pagamento-->
+                <Legend>Escolha a forma de pagamento</Legend>
+                <label>
+                    <br><input type="radio"  name="formaPagamento" value="Cartão de crédito">Cartão de Crédito
+                </label>
+                <label>
+                    <br><input type="radio" name="formaPagamento" value="Boleto">Boleto
+                </label>
+                <label>
+                    <br><input type="radio" name="formaPagamento" value="Pix">Pix
+                </label>
+            </fieldset>
+    
+            <fieldset> <!--Caixa de seleção suspensa-->
+                <legend>Escolha o prazo de pagamento</legend>
+                <select name="prazoPagamento">
+                    <option value="aVista">À vista</option>
+                    <option value="5x">5x sem juros</option>
+                    <option value="10x" selected>10x com juros</option>
+                </select>
+            </fieldset>
+            
+            <label>Comentário</label><br> <!--Formulário de comentário-->
+            <textarea rows="5" name="comentário"></textarea><br><br>
+            <button>Enviar</button>
+        </form>
+    </section>
+    <br><br>
+    <section class="container-fluid bg-light"> <!--Construção de Tabela-->
+        <h2>Taxas de um Viajante</h2>
+        <p>Veja nossas taxas para se tornar um viajante</p>
+        <table>
+            <caption>Descrição dos serviços e respectivos valores</caption>
+            <thead>
+            <tr>
+                <th>
+                    Serviço
+                </th>
+                <th>
+                    Valor
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    Reserva
+                </td>
+                <td>
+                    R$10.000,00
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Compra de passagem
+                </td>
+                <td>
+                    R$200.000,000
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Aluguel de traje
+                </td>
+                <td>
+                    R$50.000,00
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+    <br>
+    <footer class="container-fluid bg-warning">
+        Desenvolvido por André Felipe
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
+    </html> 
+</body>
